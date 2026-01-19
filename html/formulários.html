@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Formulários</title>
+</head>
+<body>
+    
+    <h1>Formulários</h1>
+    <!--
+            form -> (formulário)
+            input -> entrada de dados
+            submit -> enviar
+            button -> botão
+    -->
+            <!--
+                form action="processa.html" method="POST" 
+            -->
+
+    <form action="processa.html"">
+        <!--
+            O método get irá passar os dados na url do site
+            O POST já esconde essas informações
+        -->
+
+        Email: <br>
+        <input type="text" name="email" placeholder="Digite seu email"> <br>
+        <!--
+            chave e valor é o que o usuário digita
+            ex chave aqui é o email e o valor seria o email digitado pelo usuário
+        -->
+        Senha: <br>
+        <input type="password" name="senha" placeholder="Digite sua senha"> <br>
+
+        Comentário: <br>
+        <textarea name="comentário" placeholder="Digite um comentário"></textarea> <br>
+
+        <!--
+            Textarea: texto com mais linhas
+        -->
+
+        <!-- <input type="submit" value="Entrar"> -->
+        
+        <button type="submit">
+            
+            <!--
+                Aqui é possivel colocar imagem no botão
+            -->
+            Entrar
+
+        </button>
+
+    </form>
+        <!--
+            Action ou ação é para onde irão os dados
+        -->
+
+
+</body>
+</html>

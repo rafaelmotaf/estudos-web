@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Mais Tabelas</title>
+</head>
+<body>
+    
+    <h1>Mais sobre tabelas</h1>
+
+    <!--
+        caption -> legenda / titulo da tabela
+        thead -> Table header (cabeçalho da tabela)
+        tbody -> Table body (corpo da tabela)
+        tfoot -> Table footer (rodapé da tabela)
+    -->
+
+    <table border="1">
+
+        <!--
+            Essas formatações fica melhor porque quando for estilizar com o css, separar assim fica mais bonito para deixar certo
+        -->
+        <caption>Listagem de produtos</caption>
+        <thead>
+            <tr>
+                <th>Produto</th>
+                <th>Quantidade</th> 
+                <th>Preço</th>
+            </tr>
+            <!--Essa é a maneira correta de fazer um cabeçalho e estruturar a tabela-->
+        </thead>
+
+        <tbody>
+            <tr>
+                <td>Notebook</td>
+                <td>1</td>
+                <td>R$2000,00</td>            
+            </tr>
+            <tr>
+                <td>Tablet</td>
+                <td>2</td>
+                <td>R$1000,00</td>            
+            </tr>
+        </tbody>
+
+        <tfoot>
+            <tr>
+                <td>Total</td>
+                <td colspan="2">R$4000,00</td>
+            </tr>
+        </tfoot>
+
+    </table>
+
+
+
+</body>
+</html>

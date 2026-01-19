@@ -1,0 +1,119 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Mais sobre formulários</title>
+</head>
+<body>
+    
+    <h1>Mais sobre Formulários</h1>
+
+    <form action="processa.html" method="get">
+
+        <h2>Label</h2>
+
+        <!--
+            label -> legenda para item da interface
+            for -> para
+        -->
+        
+        <!--
+            O label quando clicar na chave irá direto para o campo de preenchimento
+        -->
+       
+            <input type="text" name="nome" id="nome">
+            <label for="nome">Nome:</label>
+        
+
+        <label for="email">Email</label>
+        <input type="text" name="email" id="email">
+
+        <!--
+            O for do label é para o ID
+        -->
+        
+        <br>
+        <h2>Mais elementos de formulário</h2>
+
+        Gênero <br>
+
+        <input type="radio" name="genero" value="feminino" id="feminino">
+        <label for="feminino">Feminino</label>
+
+        <input type="radio" name="genero" value="masculino" id="masculino">
+        <label for="masculino">Masculino</label>
+        
+        <!--
+            Label é para melhorar a parte semantica do html5
+        -->
+            <br> <br>
+
+        <!--
+            O tipo rádio o usuário só escolhe um valor
+        -->
+            Estilo Musical: <br>    
+
+            <input type="checkbox"name="estilo" value="rock" id="rock">
+            <label for="rock">Rock</label>
+
+            
+            <input type="checkbox"name="estilo" value="pop" id="pop">
+            <label for="pop">Pop</label>
+
+            <input type="checkbox"name="estilo" value="sertanejo" id="sertanejo">
+            <label for="sertanejo">Sertanejo</label>
+
+            <!--
+                No value no futuro poderemos utilizar para pegar esses dados
+            -->
+            <br> <br>
+
+            Estado:
+            <select name="estado">
+                <option value="">Selecione</option>
+                <option value="sp">São Paulo</option>
+                <option value="rj">Rio de janeiro</option>
+                <option value="ce">Ceará</option>
+                <option value="ba">Bahia</option>
+            </select>
+
+            <br> <br>
+
+            Upload de arquivo:
+            <input type="file" name="arquivo">
+
+            <br><br>
+
+        <input type="submit" value="cadastrar">
+
+
+        </form>
+
+        <form >
+
+            <h2>Fieldset e legend</h2>
+            <!--
+                fieldset -> conjunto de campos
+                legend -> legenda para conjunto de campos
+            -->
+
+            <!--
+                Aqui ocorre a junção do nome e email ficando mais elegante
+            -->
+            <fieldset>
+                <legend>Dados pessoais</legend>
+
+                    <label for="email">Email</label>
+                    <input type="text" name="email" id="email">
+                    
+                    <label for="nome">Nome:</label>
+                    <input type="text" name="nome" id="nome">
+                    
+
+            </fieldset>
+        </form>
+
+
+</body>
+</html>
