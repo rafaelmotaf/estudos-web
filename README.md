@@ -40,20 +40,3 @@ Ao navegar pelas pastas, você notará uma progressão lógica:
 2.  **Lógica de Programação:** Algoritmos em JavaScript e transição para TypeScript.
 3.  **Single Page Applications (SPA):** Aplicações reativas conectadas a APIs externas.
 4.  **Ecossistema Full Stack:** Aplicações completas integrando Next.js, Banco de Dados e autenticação.
-
-## Próximos Passos
-
-Atualmente, estou focado em consolidar o conhecimento em Docker e na arquitetura de microsserviços, além de aplicar testes automatizados para garantir a integridade das aplicações construídas.
-
----
-
-### Contato
-
-Estou aberto a discussões sobre tecnologia, code reviews e oportunidades de colaboração em projetos desafiadores.
-
-* **LinkedIn:** [Insira o Link do seu LinkedIn aqui]
-* **Email:** [Insira seu email aqui]
-* **Portfolio:** [Link do seu portfólio, se tiver]
-
----
-*Desenvolvido por [Seu Nome]*
