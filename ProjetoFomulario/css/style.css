@@ -1,0 +1,282 @@
+*, *::before,
+*::after {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+
+html {
+  font-family: "jaf-facitweb","Helvetica Neue",Arial,sans-serif;
+  color: #4d4d4d;
+  font-size: 16px;
+  font-weight: 300;
+  line-height: 1.44em;
+}
+
+body {
+  background-color: #F9FAFC;
+  font-family: "-apple-system",BlinkMacSystemFont,"Segoe UI",
+    Roboto,Oxygen,Ubuntu,"Fira Sans","Droid Sans","Helvetica Neue",sans-serif;
+  position: relative;
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+  -webkit-flex-direction: column;
+  -ms-flex-direction: column;
+  flex-direction: column;
+  min-height: 100vh;
+  -webkit-box-pack: justify;
+  -webkit-justify-content: space-between;
+  -ms-flex-pack: justify;
+  justify-content: space-between;
+  font-size: 14px;
+}
+
+a, a:link,
+a:active,
+a:visited {
+  text-decoration: none;
+}
+
+footer {
+  font-size: .8em;
+  margin: 4em 1em;
+  text-align: center;
+}
+
+textarea, input[type="text"], input[type="email"],
+  input[type="password"], input[type="number"] {
+    background: #EDEFF0;
+    border-radius: 4px;
+    border: 1px solid #CDD2D4;
+    -moz-box-sizing: border-box;
+    box-sizing: border-box;
+    padding: .5em;
+    max-width: 400px;
+    width: 100%;
+  }
+
+textarea:focus, input[type="text"]:focus, input[type="email"]:focus,
+  input[type="password"]:focus, input[type="number"]:focus {
+    border-color: #A5ACB0;
+    outline: none;
+    box-shadow: 0 0 6px #cdd2d4;
+  }
+
+textarea, input {
+  line-height: normal;
+  margin: 0 0 1.2em;
+}
+
+/**
+ * Header
+ */
+header.trello-brand > .trello-logo,
+header.trello-brand > .trello-logo img,
+header.trello-brand > .trello-logo svg {
+  display: block;
+  height: 43px;
+  margin-left: auto;
+  margin-right: auto;
+  margin-top: 40px;
+  margin-bottom: 40px;
+}
+
+/**
+ * Section
+ */
+.section-wrapper {
+  max-width: 400px;
+  margin: 0 auto;
+}
+
+.section-wrapper > .account-form {
+  background-color: #FFFFFF;
+  border-radius: 3px;
+  padding: 25px 40px;
+  box-shadow: rgb(0 0 0 / 10%) 0 0 10px;
+}
+
+.section-wrapper > .account-form h1.account-title {
+  text-align: center;
+  color: #5E6C84;
+  font-size: 16px;
+  letter-spacing: -0.01em;
+  line-height: 28px;
+  margin-top: 10px;
+  margin-bottom: 25px;
+}
+
+/**
+ * Form
+ */
+.section-wrapper > .account-form form.account-form input {
+  width: 100%;
+  font-size: 14px;
+  background-color: #FAFBFC;
+  border: 2px solid #DFE1E6;
+  -moz-box-sizing: border-box;
+  box-sizing: border-box;
+  border-radius: 3px;
+  height: 44px;
+  -webkit-transition: background-color .2s ease-in-out 0s,border-color .2s ease-in-out 0s;
+  transition: background-color .2s ease-in-out 0s,border-color .2s ease-in-out 0s;
+}
+
+.section-wrapper > .account-form form.account-form input:focus {
+  background-color: white;
+  border: 2px solid #4C9AFF;
+  box-shadow: 0 0 0;
+}
+
+.section-wrapper > .account-form form.account-form
+  input[type="submit"] {
+    background: #CDD2D4;
+    background: -webkit-gradient(linear, left top, left bottom, from(#CDD2D4), to(#C4C9CC));
+    background: linear-gradient(to bottom, #CDD2D4 0%, #C4C9CC 100%);
+    border-radius: .3em;
+    box-shadow: 0 2px 0 hsl(0deg 0% 30%);
+    color: hsl(0,0%,30%);
+    display: inline-block;
+    font-weight: bold;
+    margin-bottom: .8em;
+    padding: .6em 1.3em;
+    position: relative;
+    text-decoration: none;
+    border: 0px;
+    background: #61BD4F;
+    background: -webkit-gradient(linear, left top, left bottom, from(#61BD4F), to(#5AAC44));
+    background: linear-gradient(to bottom, #61BD4F 0%, #5AAC44 100%);
+    box-shadow: 0 2px 0 #3f6f21;
+    color: #fff;
+  }
+
+.section-wrapper > .account-form form.account-form
+  input[type="submit"]:not(:disabled) {
+    background: #5AAC44;
+  }
+
+.section-wrapper > .account-form form.account-form
+  input[type="submit"]:not(:disabled):hover {
+    background: #61BD4F;
+  }
+
+.section-wrapper > .account-form form.account-form
+  input[type="submit"] {
+    box-shadow: none;
+    -webkit-appearance: button;
+    cursor: pointer;
+    max-height: 35.20px;
+  }
+
+/**
+ * Alternative login
+ */
+.section-wrapper > .account-form span.login-separator {
+  display: block;
+  text-align: center;
+  font-size: 12px;
+  margin-top: 16px;
+  margin-bottom: 16px;
+  text-transform: uppercase;
+}
+
+.section-wrapper > .account-form form.account-form button {
+  border: none;
+  background: none;
+}
+
+.section-wrapper > .account-form form.account-form
+  button.oauth-button img, .section-wrapper > .account-form
+  form.account-form button.oauth-button svg {
+    display: inline-block;
+    border-radius: 1px;
+    width: 18px;
+    height: 18px;
+    vertical-align: middle;
+  }
+
+.section-wrapper > .account-form form.account-form
+  button.oauth-button span {
+    display: inline-block;
+    vertical-align: middle;
+    font-size: 14px;
+    font-family: inherit;
+    font-weight: bold;
+    color: #505f79;
+    padding: 3px;
+    height: 32px;
+    line-height: 32px;
+  }
+
+.section-wrapper > .account-form form.account-form
+  button.oauth-button {
+    background: #fff;
+    color: rgba(0,0,0,0.54);
+    box-shadow: rgb(0 0 0 / 20%) 1px 1px 5px 0;
+    border-color: transparent;
+    text-align: center;
+    border-radius: 3px;
+    width: 99%;
+    height: 39px;
+    padding-top: 0;
+    margin-bottom: 12px;
+    cursor: pointer;
+    -webkit-transition: background-color .2s ease-in-out 0s,border-color .2s ease-in-out 0s;
+    transition: background-color .2s ease-in-out 0s,border-color .2s ease-in-out 0s;
+  }
+
+.section-wrapper > .account-form form.account-form
+  button.oauth-button:hover {
+    cursor: pointer;
+    background-color: #F9FAFC;
+  }
+
+/**
+ * Footer
+ */
+.global-footer {
+  margin-bottom: 24px;
+  font-size: 14px;
+  line-height: 20px;
+  margin-top: 10px;
+}
+
+.global-footer .atlassian-logo > img,
+.global-footer .atlassian-logo > svg {
+  width: 150px;
+  display: inline-block;
+  vertical-align: top;
+  margin-top: 25px;
+  margin-bottom: 20px;
+}
+
+.global-footer .background {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.global-footer .background img.left-large,
+.global-footer .background svg.left-large {
+  position: absolute;
+  width: 400px;
+  bottom: 0;
+  left: 0;
+  z-index: -999;
+  max-width: 30%;
+}
+
+.global-footer .background img.right-large,
+.global-footer .background svg.right-large {
+  position: absolute;
+  width: 400px;
+  bottom: 0;
+  right: 0;
+  z-index: -999;
+  max-width: 30%;
+}
